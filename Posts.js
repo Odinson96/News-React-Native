@@ -3,8 +3,10 @@ import { ButtonGroup, GlobView, LoaderView, ScrollViewStyle, } from './Style/Pos
 import { useCallback, useEffect, useState } from 'react';
 import { Post } from './Post.js';
 import axios from 'axios';
+import { memo } from 'react';
+import { useMemo } from 'react';
 
-export const Posts = ({ navigation }) => {
+export const Posts = memo(function Posts({ navigation }) {
 
     const [posts, setPosts] = useState()
     const [refreshing, setRefreshing] = useState(false);
@@ -113,4 +115,4 @@ export const Posts = ({ navigation }) => {
             </LoaderView>
         )
     }
-}
+})
