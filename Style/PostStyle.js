@@ -5,10 +5,7 @@ background-color: bisque;
 height: 100%;
 `
 
-export const SnakeStyle = styled.View`
-height: 30%;
-background-color: gainsboro ;
-`
+
 
 export const TextInputStyled = styled.TextInput`
 height: 4%;
